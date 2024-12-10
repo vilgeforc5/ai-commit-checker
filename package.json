@@ -1,0 +1,33 @@
+{
+	"name": "ai-commit-checker",
+	"version": "0.0.2",
+	"type": "module",
+	"main": "src/index.js",
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"engines": {
+		"node": ">=18.17.1"
+	},
+	"scripts": {
+		"build": "rollup --config rollup.config.js",
+		"build:watch": "rollup --config rollup.config.js --watch"
+	},
+	"bin": "./dist/cli.js",
+	"dependencies": {
+		"gitdiff-parser": "^0.3.1",
+		"lodash-es": "^4.17.21",
+		"minimist": "^1.2.8",
+		"ollama": "^0.5.10"
+	},
+	"devDependencies": {
+		"@rollup/plugin-commonjs": "^28.0.1",
+		"@rollup/plugin-node-resolve": "^15.3.0",
+		"@rollup/plugin-terser": "^0.4.4",
+		"@rollup/plugin-typescript": "^12.1.1",
+		"@types/lodash-es": "^4",
+		"@types/minimist": "^1",
+		"rollup": "^4.27.4",
+		"typescript": "^5.6.3"
+	}
+}
